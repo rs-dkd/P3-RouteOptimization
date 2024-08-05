@@ -9,10 +9,13 @@ Create a Bridges API account and download the Bridges folder and the source file
 
 <H2>macOS/Xcode Set-up</H2>
 
-Install Xcode onto mac from Apple developer site, then install Xcode command line tools from the command line in Terminal using xcode-select --install. Create a Bridges API account and download the Mac OS X Bridges folder and the source files to the computer. Open Xcode, then select Create new project, when prompted for a template select command Line Tool under OS X/Application. Once in your project, transfer the source files into Xcode, and click on Project/Project Settings/Build Settings. Here you will select All and Levels, then scroll down until you find Header Search Paths/Debug, in which you will add a path to the bridges/include file, and the curl750/include file. After this, search for Library Search Paths, and you will add the path for curl750/lib file. After this, scroll to the top of settings and click on Build Phases, and select Link Binary With Libraries. Select Add Other, and add the library liburl.dylib to the project.
+Start off by installing the CURL library to your computer from the link provided. Then install Xcode onto mac from Apple developer site, then install Xcode command line tools from the command line in Terminal using xcode-select --install. Create a Bridges API account and download the Mac OS X Bridges folder and the source files to the computer. Open Xcode, then select Create new project, when prompted for a template select command Line Tool under OS X/Application. Once in your project, transfer the source files into Xcode, and click on Project/Project Settings/Build Settings. Here you will select All and Levels, then scroll down until you find Header Search Paths/Debug, in which you will add a path to the bridges/include file, and the curl750/include file. After this, search for Library Search Paths, and you will add the path for curl750/lib file. After this, scroll to the top of settings and click on Build Phases, and select Link Binary With Libraries. Select Add Other, and add the library liburl.dylib to the project.
 
 Documentation:
 https://bridgesuncc.github.io/bridges_setup.html
+
+CURL installation:
+https://curl.se/download.html
 
 Xcode Set-up Tutorial:
 https://bridgesuncc.github.io/bridges_setup_cxx_xcode.html
